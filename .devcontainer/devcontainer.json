@@ -1,0 +1,22 @@
+{
+  "name": "Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools-extension-pack",
+        "xaver.clang-format"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
