@@ -245,14 +245,16 @@ void calculate()
 }
 
 int main()
-try
 {
-    calculate();
-    return 0;
-}
-catch (...)
-{
-    // other errors (don't try to recover)
-    std::cerr << "exception\n";
-    return 2;
+    try
+    {
+        calculate();
+        return 0;
+    }
+    catch (...)
+    {
+        // other errors (don't try to recover)
+        std::cerr << "exception\n";
+        return 2;
+    }
 }
