@@ -103,7 +103,7 @@ struct image
     }
 
     // append (vertically concatenate) another image
-    void vcat(image const& img)
+    void append(image const& img)
     {
         for (auto const& s : img)
             data.push_back(s);

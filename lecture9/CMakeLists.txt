@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(fibonacci code/fibonacci.cpp)
 
-add_executable(multiply code/multiply.cpp)
+add_executable(generic_multiply code/multiply.cpp)
 add_executable(power code/power.cpp)
 add_executable(generic_power code/generic_power.cpp)
 
