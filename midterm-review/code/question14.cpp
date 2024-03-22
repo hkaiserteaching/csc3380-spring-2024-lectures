@@ -14,7 +14,7 @@ std::vector<std::string> align_right(std::vector<std::string> const& v)
     std::vector<std::string> result;
 
     auto maxlen = std::accumulate(v.begin(), v.end(), 0,
-        [](std::string::size_type sum, std::string curr) {
+        [](std::string::size_type sum, std::string const& curr) {
             return std::max(sum, curr.size());
         });
 

@@ -4,7 +4,7 @@ project(spring2024-csc3380-midterm-review)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(question1 code/question1.cpp)
-add_executable(question2 code/question3.cpp)
+add_executable(question3 code/question3.cpp)
 add_executable(question4 code/question4.cpp)
 add_executable(question5 code/question5.cpp)
 add_executable(question7 code/question7.cpp)
