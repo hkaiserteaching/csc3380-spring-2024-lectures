@@ -2,4 +2,4 @@
 
 See here for more information about [Lecture 15][lecture15]
 
-[lecture14]: https://teaching.hkaiser.org/spring2024/csc3380/course/lecture15.html
+[lecture15]: https://teaching.hkaiser.org/spring2024/csc3380/course/lecture15.html
