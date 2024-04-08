@@ -54,9 +54,9 @@ void demo()
     win.set_label("Canvas #4");
 
     // plot sin() in the range [0:100)
-    // with (0,0) at (20,150)
+    // with (0, 0) at (20, 150)
     // using 1000 points
-    // scale x values *50, scale y values *50
+    // scale x values * 50, scale y values * 50
     Graph_lib::Function sine(std::sin, 0, 100, Graph_lib::Point(20, 150), 1000,
         50, 50);    // sine curve
 
@@ -82,10 +82,11 @@ void demo()
     win.attach(poly);
     win.wait_for_button();
 
-    win.set_label("Canvas #6");
 
     ///////////////////////////////////////////////////////////////////////////
     // Demo 6
+
+    win.set_label("Canvas #6");
 
     // add a rectangular shape
 
@@ -127,7 +128,7 @@ void demo()
     // color the inside of the rectangle
     r.set_fill_color(Graph_lib::Color::yellow);
 
-    // make the triangle contour fat
+    // make the triangle contour fat and dashed
     poly.set_style(Graph_lib::Line_style(Graph_lib::Line_style::dash, 4));
 
     poly_rect.set_fill_color(Graph_lib::Color::green);
