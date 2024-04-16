@@ -1,9 +1,11 @@
 #include "Graph.h"            // graphical shapes
 #include "Simple_window.h"    // stuff to deal with your system's windows
 
+#include <chrono>
 #include <iostream>
 #include <memory>
 #include <stdexcept>
+#include <thread>
 
 void demo()
 {
@@ -24,6 +26,20 @@ void demo()
             v.back()->set_fill_color(i * 16 + j);
             win.attach(*v.back());
         }
+    }
+
+    win.wait_for_button();    // Draw!
+
+    for (int j = 0; j < 256; ++j)
+    {
+        for (int i = 0; i < 256; ++i)
+        {
+            int new_color = (v[i]->fill_color().as_int() + 1) % 256;
+            v[i]->set_fill_color(Graph_lib::Color(new_color));
+        }
+        Fl::wait();
+        Fl::redraw();
+        std::this_thread::sleep_for(std::chrono::milliseconds(40));
     }
 
     win.wait_for_button();    // Draw!
